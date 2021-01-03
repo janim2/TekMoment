@@ -1,4 +1,6 @@
-# A simple calcualator application for the students to have handson experience as to how to create an android application
+# A simple calcualator application for the students to have hands on experience as to how to create an android application
 
-<img src="image_one.png" 15%>
+### We are created to make a difference and your knowledge about this world will determine your impact on it
+
+<img src="image_one.png" width="15%">
 

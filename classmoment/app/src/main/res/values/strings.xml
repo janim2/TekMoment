@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ClassMoment School</string>
+    <string name="select_category">Select category to continue</string>
+    <string name="admin">Administration</string>
+    <string name="teacher">Teacher</string>
+    <string name="welcome">Welcome</string>
+</resources>
