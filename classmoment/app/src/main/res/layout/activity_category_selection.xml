@@ -1,87 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
-    android:gravity="center"
+    android:background="@color/tint_gray"
     tools:context=".CategorySelectionActivity">
 
-    <ImageView
-        android:layout_width    =   "100dp"
-        android:layout_height   =   "60dp"
-        android:src             =   "@mipmap/ic_launcher_round"
-        android:layout_gravity  =   "center"/>
-
-    <TextView
+    <LinearLayout
         android:layout_width    =   "match_parent"
         android:layout_height   =   "wrap_content"
-        android:text            =   "@string/select_category"
-        android:gravity         =   "center"
-        android:padding         =   "20dp"
-        android:textStyle       =   "italic"
-        android:textSize        =   "19dp"/>
+        android:layout_gravity  =   "center"
+        android:orientation     =   "vertical"
+        android:padding         =   "20dp">
 
 
-    <androidx.cardview.widget.CardView
-        android:layout_width    =   "match_parent"
-        android:layout_height   =   "wrap_content"
-        app:cardCornerRadius    =   "10dp">
-
-        <LinearLayout
+        <TextView
             android:layout_width    =   "match_parent"
             android:layout_height   =   "wrap_content"
-            android:padding         =   "20dp"
-            android:orientation     =   "horizontal">
+            android:text            =   "Select User type"
+            android:fontFamily      =   "@font/quicksand_light"
+            android:gravity         =   "center"/>
 
-            <ImageView
-                android:layout_width    =   "100dp"
-                android:layout_height   =   "50dp"
-                android:src             =   "@drawable/teacher_image"/>
-
-            <TextView
-                android:layout_width    =   "match_parent"
-                android:layout_height   =   "match_parent"
-                android:text            =   "@string/teacher"
-                android:textStyle       =   "bold"
-                android:textSize        =   "20sp"
-                android:gravity         =   "center_vertical"/>
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width    =   "match_parent"
-        android:layout_height   =   "wrap_content"
-        android:layout_marginTop=   "10dp"
-        app:cardCornerRadius    =   "10dp">
-
-        <LinearLayout
+        <TextView
             android:layout_width    =   "match_parent"
             android:layout_height   =   "wrap_content"
-            android:padding         =   "20dp"
-            android:orientation     =   "horizontal">
+            android:text            =   "I am "
+            android:textSize        =   "20sp"
+            android:fontFamily      =   "@font/quicksand_medium"
+            android:gravity         =   "center"/>
 
-            <ImageView
-                android:layout_width    =   "100dp"
-                android:layout_height   =   "50dp"
-                android:src             =   "@drawable/admin_image"/>
+        <TextView
+            android:id              =   "@+id/user_type_text"
+            android:layout_width    =   "match_parent"
+            android:layout_height   =   "wrap_content"
+            android:text            =   "Tutor"
+            android:textSize        =   "25sp"
+            android:textStyle       =   "bold"
+            android:layout_marginTop=   "50dp"
+            android:textColor       =   "@color/colorPrimary"
+            android:fontFamily      =   "@font/quicksand_medium"
+            android:gravity         =   "center"/>
 
-            <TextView
+        <LinearLayout
+            android:layout_width        =   "match_parent"
+            android:layout_height       =   "wrap_content"
+            android:layout_marginTop    =   "50dp"
+            android:layout_marginLeft   =   "20dp"
+            android:layout_marginRight  =   "20dp"
+            android:orientation         =   "horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id              =   "@+id/tutor_cardview"
                 android:layout_width    =   "match_parent"
                 android:layout_height   =   "match_parent"
-                android:text            =   "@string/admin"
-                android:textStyle       =   "bold"
-                android:textSize        =   "20sp"
-                android:gravity         =   "center_vertical"/>
+                app:cardCornerRadius    =   "10dp"
+                android:layout_margin   =   "5dp"
+                android:layout_weight   =   "1"
+                app:cardBackgroundColor =   "@color/colorAccent">
 
+                <LinearLayout
+                    android:layout_width    =   "match_parent"
+                    android:layout_height   =   "wrap_content"
+                    android:padding         =   "10dp"
+                    android:orientation     =   "vertical">
+
+                    <ImageView
+                        android:layout_width    =   "63dp"
+                        android:layout_height   =   "63dp"
+                        android:layout_gravity  =   "center"
+                        android:src             =   "@drawable/teacher_image"/>
+
+                    <TextView
+                        android:id              =   "@+id/tutor_txt_in_card"
+                        android:layout_width    =   "match_parent"
+                        android:layout_height   =   "wrap_content"
+                        android:text            =   "Tutor"
+                        android:gravity         =   "center"
+                        android:textColor       =   "@android:color/white"
+                        android:fontFamily      =   "@font/quicksand_regular"
+                        android:textSize        =   "15sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id              =   "@+id/admin_cardiew"
+                android:layout_width    =   "match_parent"
+                android:layout_height   =   "match_parent"
+                android:layout_weight   =   "1"
+                android:layout_margin   =   "5dp"
+                app:cardCornerRadius    =   "10dp"
+                app:cardBackgroundColor =   "@android:color/white">
+
+                <LinearLayout
+                    android:layout_width    =   "match_parent"
+                    android:layout_height   =   "wrap_content"
+                    android:padding         =   "10dp"
+                    android:orientation     =   "vertical">
+
+                    <ImageView
+                        android:layout_width    =   "63dp"
+                        android:layout_height   =   "63dp"
+                        android:layout_gravity  =   "center"
+                        android:src             =   "@drawable/admin_image"/>
+
+                    <TextView
+                        android:id              =   "@+id/admin_txt_in_card"
+                        android:layout_width    =   "match_parent"
+                        android:layout_height   =   "wrap_content"
+                        android:text            =   "Admin"
+                        android:textColor       =   "@color/colorPrimary"
+                        android:gravity         =   "center"
+                        android:fontFamily      =   "@font/quicksand_regular"
+                        android:textSize        =   "15sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id                  =   "@+id/continue_button"
+            android:layout_width        =   "match_parent"
+            android:layout_height       =   "wrap_content"
+            android:background          =   "@color/colorPrimary"
+            android:layout_marginTop    =   "30dp"
+            android:text                =   "Continue"
+            android:textColor           =   "@color/white"/>
 
 
+    </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
