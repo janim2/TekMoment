@@ -9,6 +9,7 @@ import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.tekmoment.classmomentschool.databinding.ActivityCategorySelectionBinding;
 import com.tekmoment.classmomentschool.databinding.ActivityLoginBinding;
@@ -50,6 +51,17 @@ public class LoginActivity extends AppCompatActivity {
         Spannable signupwordtoSpan = new SpannableString("Do not have an account? Sign Up");
         signupwordtoSpan.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.colorAccent)), 24, 31, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         do_not_have_account_text.setText(signupwordtoSpan);
+
+        binding.doNotHaveAnAccount.setOnClickListener(view12 -> {
+            if(user_type_string.equals("Admin")){
+                Intent admin_ref = new Intent(LoginActivity.this, RegisterSchoolActivity.class);
+                admin_ref.putExtra("user_type", user_type_string);
+                startActivity(admin_ref);
+            }
+            else{
+                Toast.makeText(LoginActivity.this, "Tutor screen not added yet", Toast.LENGTH_LONG).show();
+            }
+        });
 
 
     }
