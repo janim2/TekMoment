@@ -48,10 +48,9 @@ public class RegisterSchoolActivity extends AppCompatActivity {
         user_type_text.setText(wordtoSpan);
 
         binding.addSchoolButton.setOnClickListener(view12 -> {
-//            Intent success_intent = new Intent(RegisterSchoolActivity.this, SuccessActivity.class);
-//            success_intent.putExtra("success_type", "school_added");
-//            startActivity(success_intent);
-            Toast.makeText(RegisterSchoolActivity.this, "Coming soon", Toast.LENGTH_LONG).show();
+            Intent success_intent = new Intent(RegisterSchoolActivity.this, SuccessActivity.class);
+            success_intent.putExtra("success_type", "school_added");
+            startActivity(success_intent);
         });
     }
 }

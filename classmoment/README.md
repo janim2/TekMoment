@@ -6,4 +6,4 @@ All explaniations can be acquired in the Schoology classroom.
 
 # Images
 <img src="screenshots/one.png" width="23%"> <img src="screenshots/two.png" width="23%">
-<img src="screenshots/three.png" width="23%">
+<img src="screenshots/three.png" width="23%"> <img src="screenshots/four.png" width="23%">
