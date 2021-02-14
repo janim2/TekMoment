@@ -33,6 +33,7 @@
                     android:textColor       =   "@color/white"/>
 
                 <ImageView
+                    android:id                  =   "@+id/menu_image"
                     android:layout_width        =   "43dp"
                     android:layout_height       =   "53dp"
                     android:layout_gravity      =   "right|center"
@@ -92,6 +93,7 @@
 <!--                        we will have to add an image to the UI so we can download the image from google-->
 <!--                        i got this image from flaticon.-->
                         <ImageView
+                            android:id              =   "@+id/students_image"
                             android:layout_width    =   "43dp"
                             android:layout_height   =   "50dp"
                             android:src             =   "@drawable/add_circle"
@@ -125,6 +127,7 @@
                         <!--                        we will have to add an image to the UI so we can download the image from google-->
                         <!--                        i got this image from flaticon.-->
                         <ImageView
+                            android:id              =   "@+id/parents_image"
                             android:layout_width    =   "43dp"
                             android:layout_height   =   "50dp"
                             android:src             =   "@drawable/add_circle"
@@ -158,6 +161,7 @@
                         <!--                        we will have to add an image to the UI so we can download the image from google-->
                         <!--                        i got this image from flaticon.-->
                         <ImageView
+                            android:id              =   "@+id/teachers_image"
                             android:layout_width    =   "43dp"
                             android:layout_height   =   "50dp"
                             android:src             =   "@drawable/add_circle"
@@ -198,6 +202,7 @@
                         <!--                        we will have to add an image to the UI so we can download the image from google-->
                         <!--                        i got this image from flaticon.-->
                         <ImageView
+                            android:id              =   "@+id/messages_image"
                             android:layout_width    =   "43dp"
                             android:layout_height   =   "50dp"
                             android:src             =   "@drawable/add_circle"
@@ -231,6 +236,7 @@
                         <!--                        we will have to add an image to the UI so we can download the image from google-->
                         <!--                        i got this image from flaticon.-->
                         <ImageView
+                            android:id              =   "@+id/courses_image"
                             android:layout_width    =   "43dp"
                             android:layout_height   =   "50dp"
                             android:src             =   "@drawable/add_circle"
@@ -254,6 +260,7 @@
 
 <!--                    the logout item-->
                     <LinearLayout
+                        android:id              =   "@+id/logout_layout"
                         android:layout_width    =   "match_parent"
                         android:layout_height   =   "wrap_content"
                         android:layout_weight   =   "1"
@@ -275,7 +282,7 @@
                         <TextView
                             android:layout_width    =   "match_parent"
                             android:layout_height   =   "wrap_content"
-                            android:text            =   "Parents"
+                            android:text            =   "Logout"
                             android:textSize        =   "20sp"
                             android:fontFamily      =   "@font/quicksand_medium"/>
 

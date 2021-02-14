@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="200px"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width    =   "wrap_content"
+        android:minWidth        =   "250dp"
+        android:layout_height   =   "wrap_content"
+        android:layout_margin   =   "20dp"
+        android:background      =   "@android:color/white"
+        android:orientation     =   "vertical">
+
+        <ImageButton
+            android:id              =   "@+id/btnClose"
+            android:layout_width    =   "wrap_content"
+            android:layout_height   =   "wrap_content"
+            android:layout_gravity  =   "right"
+            android:background      =   "@drawable/curved_corners_red"
+            android:src             =   "@android:drawable/ic_menu_close_clear_cancel" />
+
+        <TextView
+            android:layout_width    =   "match_parent"
+            android:layout_height   =   "wrap_content"
+            android:text            =   "Add New Tutor"
+            android:fontFamily      =   "@font/quicksand_regular"
+            android:textSize        =   "18sp"
+            android:textColor       =   "@android:color/black"
+            android:gravity         =   "center"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id              =   "@+id/tutor_image"
+            android:layout_width    =   "150dp"
+            android:layout_height   =   "150dp"
+            android:scaleType       =   "centerCrop"
+            android:layout_gravity  =   "center"
+            android:background      =   "@drawable/profile_image"/>
+
+        <EditText
+            android:id              =   "@+id/tutor_fname"
+            android:layout_width    =   "match_parent"
+            android:layout_height   =   "60dp"
+            android:background      =   "@android:drawable/editbox_background_normal"
+            android:hint            =   "First name"
+            android:padding         =   "10dp"
+            android:fontFamily      =   "@font/quicksand_medium"/>
+
+        <EditText
+            android:id              =   "@+id/tutor_lname"
+            android:layout_width    =   "match_parent"
+            android:layout_height   =   "60dp"
+            android:background      =   "@android:drawable/editbox_background_normal"
+            android:hint            =   "Last name"
+            android:padding         =   "10dp"
+            android:fontFamily      =   "@font/quicksand_medium"/>
+
+        <EditText
+            android:id              =   "@+id/tutor_location"
+            android:layout_width    =   "match_parent"
+            android:layout_height   =   "60dp"
+            android:background      =   "@android:drawable/editbox_background_normal"
+            android:hint            =   "Residential address"
+            android:inputType       =   "text"
+            android:padding         =   "10dp"
+            android:fontFamily      =   "@font/quicksand_medium"/>
+
+        <EditText
+            android:id              =   "@+id/tutor_email"
+            android:layout_width    =   "match_parent"
+            android:layout_height   =   "60dp"
+            android:background      =   "@android:drawable/editbox_background_normal"
+            android:hint            =   "Email"
+            android:inputType       =   "textEmailAddress"
+            android:padding         =   "10dp"
+            android:fontFamily      =   "@font/quicksand_medium"/>
+
+        <TextView
+            android:layout_width    =   "match_parent"
+            android:layout_height   =   "wrap_content"
+            android:text            =   "Assign to class"
+            android:fontFamily      =   "@font/quicksand_bold"
+            android:textSize        =   "16sp"
+            android:padding         =   "12dp"
+            android:drawableLeft    =   "@drawable/forward"
+            android:textColor       =   "@color/colorPrimary"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id              =   "@+id/continue_button"
+            android:layout_width    =   "match_parent"
+            android:layout_height   =   "wrap_content"
+            android:background      =   "@color/colorPrimary"
+            android:layout_marginTop=   "30dp"
+            android:text            =   "Add"
+            android:textColor       =   "@color/white"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

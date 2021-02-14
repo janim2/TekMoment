@@ -41,5 +41,9 @@ dependencies {
     //material design for edittext with password
     implementation 'com.google.android.material:material:1.0.0'
 
+    //circle imageview
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+
 
 }
