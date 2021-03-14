@@ -31,9 +31,20 @@ public class SchoolDashboardActivity extends AppCompatActivity {
             startActivity(new Intent(SchoolDashboardActivity.this, MenuActivity.class));
         });
 
+        //view students
+        binding.studentsLayout.setOnClickListener(view13 -> {
+            startActivity(new Intent(SchoolDashboardActivity.this, AllStudentsActivity.class));
+        });
+
         //students
         binding.studentsImage.setOnClickListener(view1 -> {
             AddStudentDialog();
+        });
+
+        //view parents
+        binding.parentsLayout.setOnClickListener(view13 -> {
+            startActivity(new Intent(SchoolDashboardActivity.this, AllParentsActivity.class));
+
         });
 
         //parents
@@ -41,14 +52,25 @@ public class SchoolDashboardActivity extends AppCompatActivity {
             AddParentDialog();
         });
 
+        //view teachers
+        binding.teachersLayout.setOnClickListener(view13 -> {
+            startActivity(new Intent(SchoolDashboardActivity.this, AllTutorsActivity.class));
+        });
+
         //teachers
         binding.teachersImage.setOnClickListener(view1 -> {
             AddTutorDialog();
         });
 
+
         //messages
         binding.messagesImage.setOnClickListener(view1 -> {
 
+        });
+
+        //view courses
+        binding.coursesLayout.setOnClickListener(view13 -> {
+            startActivity(new Intent(SchoolDashboardActivity.this, AllClassesActivity.class));
         });
 
         //courses

@@ -82,6 +82,7 @@
 <!--                    its the students item-->
 
                     <LinearLayout
+                        android:id              =   "@+id/students_layout"
                         android:layout_width    =   "match_parent"
                         android:layout_height   =   "wrap_content"
                         android:layout_weight   =   "1"
@@ -116,6 +117,7 @@
 
 <!--                    the parent item                    -->
                     <LinearLayout
+                        android:id              =   "@+id/parents_layout"
                         android:layout_width    =   "match_parent"
                         android:layout_height   =   "wrap_content"
                         android:layout_weight   =   "1"
@@ -150,6 +152,7 @@
 
 <!--                    the parent item-->
                     <LinearLayout
+                        android:id              =   "@+id/teachers_layout"
                         android:layout_width    =   "match_parent"
                         android:layout_height   =   "wrap_content"
                         android:layout_weight   =   "1"
@@ -225,6 +228,7 @@
 
 <!--                    the courses item-->
                     <LinearLayout
+                        android:id              =   "@+id/courses_layout"
                         android:layout_width    =   "match_parent"
                         android:layout_height   =   "wrap_content"
                         android:layout_weight   =   "1"

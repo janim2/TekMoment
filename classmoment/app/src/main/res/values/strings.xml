@@ -5,4 +5,9 @@
     <string name="teacher">Teacher</string>
     <string name="welcome">Welcome</string>
     <string name="menu">Menu</string>
+    <string name="students">Students</string>
+    <string name="search_students">search_students</string>
+    <string name="tutors">Tutors</string>
+    <string name="parents">Parents</string>
+    <string name="classes">Classes</string>
 </resources>

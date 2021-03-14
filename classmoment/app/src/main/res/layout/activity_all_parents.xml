@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllParentsActivity"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width    =   "match_parent"
+        android:layout_height   =   "wrap_content"
+        android:orientation     =   "horizontal">
+
+        <ImageView
+            android:layout_width    =   "40dp"
+            android:layout_height   =   "35dp"
+            android:src             =   "@drawable/goback_white"
+            android:layout_gravity  =   "center"
+            android:layout_marginLeft=  "20dp"/>
+
+        <TextView
+            android:layout_width    =   "match_parent"
+            android:layout_height   =   "wrap_content"
+            android:text            =   "@string/parents"
+            android:layout_weight   =   "1"
+            android:textSize        =   "35sp"
+            android:paddingTop      =   "30dp"
+            android:paddingBottom   =   "30dp"
+            android:fontFamily      =   "@font/quicksand_semibold"
+            android:textColor       =   "@android:color/white"/>
+
+        <ImageView
+            android:layout_width    =   "40dp"
+            android:layout_height   =   "35dp"
+            android:src             =   "@drawable/add_white"
+            android:layout_gravity  =   "center"
+            android:layout_marginRight=  "20dp"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width    =   "350dp"
+        android:layout_height   =   "wrap_content"
+        android:layout_gravity  =   "center"
+        app:cardElevation       =   "10dp"
+        app:cardCornerRadius    =   "30dp">
+
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width    =   "match_parent"
+            android:layout_height   =   "wrap_content"
+            app:queryHint           =   "@string/search_students"/>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width    =   "match_parent"
+        android:layout_height   =   "match_parent"
+        android:layout_marginTop=   "10dp">
+
+        <LinearLayout
+            android:layout_width    =   "match_parent"
+            android:layout_height   =   "wrap_content"
+            android:orientation     =   "vertical"
+            android:layout_margin   =   "5dp">
+
+            <include layout="@layout/parents_attachment"/>
+            <include layout="@layout/parents_attachment"/>
+            <include layout="@layout/parents_attachment"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
