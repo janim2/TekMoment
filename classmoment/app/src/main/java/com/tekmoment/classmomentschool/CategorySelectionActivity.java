@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.tekmoment.classmomentschool.Helpers.Functions;
 import com.tekmoment.classmomentschool.databinding.ActivityCategorySelectionBinding;
 
 public class CategorySelectionActivity extends AppCompatActivity {
@@ -21,12 +22,16 @@ public class CategorySelectionActivity extends AppCompatActivity {
 
     private String                              user_type = "Tutor";
 
+    private Functions                           helpers;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityCategorySelectionBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
+
+        helpers = new Functions(this);
 
         usertype_txt        = binding.userTypeText;
         user_txt_in_card    = binding.tutorTxtInCard;
@@ -49,7 +54,7 @@ public class CategorySelectionActivity extends AppCompatActivity {
 
         binding.continueButton.setOnClickListener(view13 -> {
             Intent gotologin = new Intent(CategorySelectionActivity.this, LoginActivity.class);
-                gotologin.putExtra("user_type", user_type);
+                helpers.put("user_type", user_type);
             startActivity(gotologin);
         });
     }

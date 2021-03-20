@@ -10,4 +10,5 @@
     <string name="tutors">Tutors</string>
     <string name="parents">Parents</string>
     <string name="classes">Classes</string>
+    <string name="circulate_msg">Circulate Message</string>
 </resources>

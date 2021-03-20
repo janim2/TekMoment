@@ -11,3 +11,4 @@ All explaniations can be acquired in the Schoology classroom.
 <img src="screenshots/seven.png" width="23%"> <img src="screenshots/eight.png" width="23%">
 <img src="screenshots/nine.png" width="23%"> <img src="screenshots/ten.png" width="23%">
 <img src="screenshots/eleven.png" width="23%"> <img src="screenshots/twelve.png" width="23%">
+<img src="screenshots/thirteen.png" width="23%"> <img src="screenshots/fourteen.png" width="23%">

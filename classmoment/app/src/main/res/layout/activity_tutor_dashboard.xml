@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/school_dashboard_background"
-    tools:context=".SchoolDashboardActivity">
+    android:background="@drawable/tutor_dashboard_background"
+    tools:context=".TutorDashboardActivity">
 
     <ScrollView
         android:layout_width    =   "match_parent"
@@ -16,7 +16,7 @@
             android:layout_height   =   "wrap_content"
             android:orientation     =   "vertical">
 
-<!--            linear layout for greeting the admin and the menu icon-->
+            <!--            linear layout for greeting the admin and the menu icon-->
             <LinearLayout
                 android:layout_width    =   "match_parent"
                 android:layout_height   =   "wrap_content"
@@ -25,7 +25,7 @@
                 <TextView
                     android:layout_width    =   "match_parent"
                     android:layout_height   =   "wrap_content"
-                    android:text            =   "Hi, \nAdmin"
+                    android:text            =   "Hi, \nTutor"
                     android:layout_weight   =   "1"
                     android:textSize        =   "40sp"
                     android:padding         =   "30dp"
@@ -41,7 +41,7 @@
                     android:src                 =   "@drawable/menu"/>
 
             </LinearLayout>
-<!--            linear layout to hold the school name and other details.-->
+            <!--            linear layout to hold the school name and other details.-->
             <LinearLayout
                 android:layout_width        =   "match_parent"
                 android:layout_height       =   "wrap_content"
@@ -49,7 +49,7 @@
                 android:layout_marginRight  =   "10dp"
                 android:orientation         =   "vertical">
 
-<!--                The school name-->
+                <!--                The school name-->
                 <TextView
                     android:layout_width    =   "match_parent"
                     android:layout_height   =   "wrap_content"
@@ -60,7 +60,7 @@
                     android:fontFamily      =   "@font/quicksand_regular"
                     android:textColor       =   "@color/white"/>
 
-<!--                the school address-->
+                <!--                the school address-->
                 <TextView
                     android:layout_width    =   "match_parent"
                     android:layout_height   =   "wrap_content"
@@ -71,15 +71,15 @@
                     android:textColor       =   "@color/white"/>
 
 
-<!--                adding the various components-->
+                <!--                adding the various components-->
                 <LinearLayout
                     android:layout_width    =   "match_parent"
                     android:layout_height   =   "wrap_content"
                     android:orientation     =   "horizontal"
                     android:layout_marginTop=   "30dp">
 
-<!--                    first item in the horizontal view-->
-<!--                    its the students item-->
+                    <!--                    first item in the horizontal view-->
+                    <!--                    its the students item-->
 
                     <LinearLayout
                         android:id              =   "@+id/students_layout"
@@ -91,14 +91,14 @@
                         android:orientation     =   "vertical"
                         android:background      =   "@drawable/curved_corners_white">
 
-<!--                        we will have to add an image to the UI so we can download the image from google-->
-<!--                        i got this image from flaticon.-->
-                        <ImageView
-                            android:id              =   "@+id/students_image"
-                            android:layout_width    =   "43dp"
-                            android:layout_height   =   "50dp"
-                            android:src             =   "@drawable/add_circle"
-                            android:layout_gravity  =   "right"/>
+                        <!--                        we will have to add an image to the UI so we can download the image from google-->
+                        <!--                        i got this image from flaticon.-->
+<!--                        <ImageView-->
+<!--                            android:id              =   "@+id/students_image"-->
+<!--                            android:layout_width    =   "43dp"-->
+<!--                            android:layout_height   =   "50dp"-->
+<!--                            android:src             =   "@drawable/add_circle"-->
+<!--                            android:layout_gravity  =   "right"/>-->
 
                         <ImageView
                             android:layout_width    =   "63dp"
@@ -115,9 +115,9 @@
 
                     </LinearLayout>
 
-<!--                    the parent item                    -->
+                    <!--                    the parent item                    -->
                     <LinearLayout
-                        android:id              =   "@+id/parents_layout"
+                        android:id              =   "@+id/record_layout"
                         android:layout_width    =   "match_parent"
                         android:layout_height   =   "wrap_content"
                         android:layout_weight   =   "1"
@@ -128,31 +128,33 @@
 
                         <!--                        we will have to add an image to the UI so we can download the image from google-->
                         <!--                        i got this image from flaticon.-->
-                        <ImageView
-                            android:id              =   "@+id/parents_image"
-                            android:layout_width    =   "43dp"
-                            android:layout_height   =   "50dp"
-                            android:src             =   "@drawable/add_circle"
-                            android:layout_gravity  =   "right"/>
+<!--                        <ImageView-->
+<!--                            android:id              =   "@+id/parents_image"-->
+<!--                            android:layout_width    =   "43dp"-->
+<!--                            android:layout_height   =   "50dp"-->
+<!--                            android:src             =   "@drawable/add_circle"-->
+<!--                            android:layout_gravity  =   "right"/>-->
 
                         <ImageView
                             android:layout_width    =   "63dp"
                             android:layout_height   =   "50dp"
-                            android:src             =   "@drawable/ic_family"
+                            android:src             =   "@drawable/record"
                             android:layout_gravity  =   "left"/>
 
                         <TextView
                             android:layout_width    =   "match_parent"
                             android:layout_height   =   "wrap_content"
-                            android:text            =   "Parents"
+                            android:text            =   "Record"
                             android:textSize        =   "20sp"
                             android:fontFamily      =   "@font/quicksand_medium"/>
 
                     </LinearLayout>
 
-<!--                    the parent item-->
+                    <!--                    the parent item-->
+
+                    <!--                    the messages item-->
                     <LinearLayout
-                        android:id              =   "@+id/teachers_layout"
+                        android:id              =   "@+id/messages_layout"
                         android:layout_width    =   "match_parent"
                         android:layout_height   =   "wrap_content"
                         android:layout_weight   =   "1"
@@ -163,23 +165,17 @@
 
                         <!--                        we will have to add an image to the UI so we can download the image from google-->
                         <!--                        i got this image from flaticon.-->
-                        <ImageView
-                            android:id              =   "@+id/teachers_image"
-                            android:layout_width    =   "43dp"
-                            android:layout_height   =   "50dp"
-                            android:src             =   "@drawable/add_circle"
-                            android:layout_gravity  =   "right"/>
 
                         <ImageView
                             android:layout_width    =   "63dp"
                             android:layout_height   =   "50dp"
-                            android:src             =   "@drawable/ic_education"
+                            android:src             =   "@drawable/ic_email"
                             android:layout_gravity  =   "left"/>
 
                         <TextView
                             android:layout_width    =   "match_parent"
                             android:layout_height   =   "wrap_content"
-                            android:text            =   "Teachers"
+                            android:text            =   "Messages"
                             android:textSize        =   "20sp"
                             android:fontFamily      =   "@font/quicksand_medium"/>
 
@@ -196,7 +192,7 @@
 
                     <!--                    the courses item-->
                     <LinearLayout
-                        android:id              =   "@+id/courses_layout"
+                        android:id              =   "@+id/classes_layout"
                         android:layout_width    =   "match_parent"
                         android:layout_height   =   "wrap_content"
                         android:layout_weight   =   "1"
@@ -208,7 +204,7 @@
                         <!--                        we will have to add an image to the UI so we can download the image from google-->
                         <!--                        i got this image from flaticon.-->
                         <ImageView
-                            android:id              =   "@+id/courses_image"
+                            android:id              =   "@+id/add_class_image"
                             android:layout_width    =   "43dp"
                             android:layout_height   =   "50dp"
                             android:src             =   "@drawable/add_circle"
@@ -223,50 +219,13 @@
                         <TextView
                             android:layout_width    =   "match_parent"
                             android:layout_height   =   "wrap_content"
-                            android:text            =   "Courses"
+                            android:text            =   "Classes"
                             android:textSize        =   "20sp"
                             android:fontFamily      =   "@font/quicksand_medium"/>
 
                     </LinearLayout>
 
-<!--                    the messages item-->
-                    <LinearLayout
-                        android:id              =   "@+id/messages_layout"
-                        android:layout_width    =   "match_parent"
-                        android:layout_height   =   "wrap_content"
-                        android:layout_weight   =   "1"
-                        android:layout_margin   =   "5dp"
-                        android:padding         =   "12dp"
-                        android:orientation     =   "vertical"
-                        android:background      =   "@drawable/curved_corners_white">
-
-                        <!--                        we will have to add an image to the UI so we can download the image from google-->
-                        <!--                        i got this image from flaticon.-->
-                        <ImageView
-                            android:visibility      =   "invisible"
-                            android:id              =   "@+id/messages_image"
-                            android:layout_width    =   "43dp"
-                            android:layout_height   =   "50dp"
-                            android:src             =   "@drawable/add_circle"
-                            android:layout_gravity  =   "right"/>
-
-                        <ImageView
-                            android:layout_width    =   "63dp"
-                            android:layout_height   =   "50dp"
-                            android:src             =   "@drawable/ic_email"
-                            android:layout_gravity  =   "left"/>
-
-                        <TextView
-                            android:layout_width    =   "match_parent"
-                            android:layout_height   =   "wrap_content"
-                            android:text            =   "Messages"
-                            android:textSize        =   "20sp"
-                            android:fontFamily      =   "@font/quicksand_medium"/>
-
-                    </LinearLayout>
-
-
-<!--                    the logout item-->
+                    <!--                    the logout item-->
                     <LinearLayout
                         android:id              =   "@+id/logout_layout"
                         android:layout_width    =   "match_parent"

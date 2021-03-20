@@ -9,6 +9,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 
+import com.tekmoment.classmomentschool.PopupClasses.AllPopups;
 import com.tekmoment.classmomentschool.databinding.ActivityRegisterSchoolBinding;
 import com.tekmoment.classmomentschool.databinding.ActivitySchoolDashboardBinding;
 
@@ -18,6 +19,8 @@ public class SchoolDashboardActivity extends AppCompatActivity {
 
     private Dialog                         dialog;
 
+    private AllPopups                      popups;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,8 @@ public class SchoolDashboardActivity extends AppCompatActivity {
         binding = ActivitySchoolDashboardBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
+
+        popups = new AllPopups(this);
 
         //menu
         binding.menuImage.setOnClickListener(view12 -> {
@@ -64,8 +69,8 @@ public class SchoolDashboardActivity extends AppCompatActivity {
 
 
         //messages
-        binding.messagesImage.setOnClickListener(view1 -> {
-
+        binding.messagesLayout.setOnClickListener(view1 -> {
+            startActivity(new Intent(SchoolDashboardActivity.this, CirculateMessagesActivity.class));
         });
 
         //view courses
@@ -80,7 +85,7 @@ public class SchoolDashboardActivity extends AppCompatActivity {
 
         //logout
         binding.logoutLayout.setOnClickListener(view1 -> {
-            LogoutDialog();
+            popups.LogoutDialog();
         });
     }
 
@@ -131,19 +136,4 @@ public class SchoolDashboardActivity extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable((Color.TRANSPARENT)));
         dialog.show();
     }
-
-    private void LogoutDialog(){
-        dialog = new Dialog(this);
-        dialog.setContentView(R.layout.logout_popup_);
-
-        dialog.findViewById(R.id.stay_button).setOnClickListener(view -> {
-            dialog.dismiss();
-        });
-
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable((Color.TRANSPARENT)));
-        dialog.show();
-    }
-
-
-
 }

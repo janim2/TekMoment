@@ -9,14 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AllClassesActivity"
+        <activity android:name=".MyClassesActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".AllTutorsActivity"
+        <activity android:name=".MyStudentsActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".AllParentsActivity"
+        <activity android:name=".TutorDashboardActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".AllStudentsActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".CirculateMessagesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AllClassesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".AllTutorsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".AllParentsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".AllStudentsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".MenuActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
